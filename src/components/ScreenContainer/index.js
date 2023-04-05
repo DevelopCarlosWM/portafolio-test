@@ -1,4 +1,5 @@
 import React from 'react';
+import './ScreenContainer.scss';
 
 const ScreenContainer = ({ children }) => {
   return (

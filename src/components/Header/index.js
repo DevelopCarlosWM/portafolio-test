@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className='header-main'>
         <div className="header-image--container">
-          <img alt="Logo" src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" />
+          <img alt="Logo" src={require('../assets/brand.png')} />
         </div>
         <div className="header-nav-list--container">
           <ul>

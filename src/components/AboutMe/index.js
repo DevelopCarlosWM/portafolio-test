@@ -1,23 +1,24 @@
 import React from 'react';
 import './AboutMe.scss';
 
-const AboutMe = () => {
-  const handleClick = () => {
-    alert('test');
-  };
+const AboutMeSectionSection = ({ backgroundColor, img, title, content, onClick, buttonTitle, titleColor, contentColor }) => {
   return (
-    <div className="aboutme-main--container">
+    <div className="aboutme-main--container" style={backgroundColor ? { backgroundColor } : undefined}>
       <div className="padding-container">
         <div className="content-container">
           <div className="info-container">
             <div className="info-wrapper">
-              <h1>Mauricio Sandre</h1>
-              <p>adsjfa asjdajda dhs dh2j3ms dahufr s ajdw dfnasdjf ajf asds dfhq ana da</p>
-              <button onClick={handleClick} type="button">Contact</button>
+              <h1 style={titleColor ? { color: titleColor } : undefined}>
+                {title}
+              </h1>
+              <p style={contentColor ? { color: contentColor } : undefined}>
+                {content}
+              </p>
+              <button onClick={onClick} type="button">{buttonTitle}</button>
             </div>
           </div>
           <div className="img-container">
-            <img alt="Logo" src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" />
+            <img alt="Logo" src={img} />
           </div>
         </div>
       </div>
@@ -25,4 +26,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMeSectionSection;

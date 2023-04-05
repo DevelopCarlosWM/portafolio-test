@@ -8,8 +8,6 @@ html, body, #root {
 }
 
 .main-container {
-  width: 100vw;
-  height: 100vh;
   background: rgb(253,29,29);
   background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(51,29,253,1) 50%, rgba(252,213,69,1) 100%);
 }
