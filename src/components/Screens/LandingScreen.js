@@ -9,7 +9,7 @@ import SkillsetSection from '../SkillsetSection';
 
 const LandingScreen = () => {
   const dispatch = useDispatch();
-  const { isLoading, pokemons } = useSelector(pokemonListSelector);
+  const { pokemons } = useSelector(pokemonListSelector);
 
   useEffect(() => {
     dispatch(pokemonActions.setIsLoading(true));

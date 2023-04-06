@@ -1,0 +1,30 @@
+.nested-images {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 20px 0px;
+  img {
+    position: absolute;
+    width: 220px !important;
+    height: 250px !important;
+  }
+  .img1 {
+    z-index: 1;
+    top: 20%;
+    left: 20%;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+  }
+  .img2 {
+    top: 10%;
+    right: 20%;
+    box-shadow: 10px 10px 24px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 24px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -13px rgba(0,0,0,0.75);
+  }
+}
+.custom-info-wrapper {
+  align-self: flex-start;
+  padding-top: 15%;
+}
